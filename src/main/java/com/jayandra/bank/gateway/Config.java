@@ -12,7 +12,7 @@ public class Config {
     {
         return routeLocatorBuilder.routes()
                 .route("appdemo", rt -> rt.path("/")
-                        .uri("http://localhost:8080"))
+                        .uri("http://localhost:8080/"))
                 .route("gawa", rt -> rt.path("/api/v1/student")
                         .uri("http://10.10.30.31:7005"))
                 .build();
